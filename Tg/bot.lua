@@ -6,7 +6,7 @@ serpent = require('serpent')
 redis:select(2)
 gp = -000000000000
 sudo_users = {
-[272970544] = '[Ee][Rr][Oo][Rr][Rr]_[Yy][Ss][Ee]',
+[329467212],
 }
 function dl_cb(arg, data)
   vardump(arg)
@@ -54,7 +54,7 @@ local users2 = redis:scard('bot:addlist')
 local pvmsgs = redis:get("pv:msgs")
 local gpmsgs = redis:get("gp:msgs")
 local sgpmsgs = redis:get("supergp:msgs")
-local text =  "کاربران: "..users2.."\n پیام های پی وی : "..pvmsgs.."\nگروه : "..gps2.."\nپیام های گروه : "..gpmsgs.."\nسوپر گروه ها : "..sgps2.."\nپیام های سوپر گروه : "..sgpmsgs.."\n@Radicall_team"
+local text =  "کاربران: "..users2.."\n پیام های پی وی : "..pvmsgs.."\nگروه : "..gps2.."\nپیام های گروه : "..gpmsgs.."\nسوپر گروه ها : "..sgps2.."\nپیام های سوپر گروه : "..sgpmsgs.."\n@CerNerTeam"
 tdcli.sendMessage(msg.chat_id_, 0, 1, '<b>'..text..'</b>', 1, 'html')
 elseif msg.content_.text_ == "/ping" then
 tdcli.sendMessage(msg.chat_id_, 0, 1, '<b>Active</b>', 1, 'html')
