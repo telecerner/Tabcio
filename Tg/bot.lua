@@ -6,7 +6,7 @@ serpent = require('serpent')
 redis:select(2)
 gp = -000000000000
 sudo_users = {
-[329467212] ='[Mm][Rr][Cc][Ll][Ii][Aa][Pp][Ii]',
+[329467212] = '[Mm][Rr][Cc][Ll][Ii][Aa][Pp][Ii]',
 }
 function dl_cb(arg, data)
   vardump(arg)
